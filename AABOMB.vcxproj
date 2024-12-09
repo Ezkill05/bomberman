@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63F05779-B26F-3443-99A2-9E9E8718260C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>AABOMB</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\bin\AABOMB\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">AABOMB.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">AABOMB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\bin\AABOMB\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">AABOMB.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|win32'">AABOMB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\bin\AABOMB\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">AABOMB.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">AABOMB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\bin\AABOMB\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">AABOMB.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">AABOMB</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/Box2D/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/chipmunk/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/bullet/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/uv/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/webp/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/websockets/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/curl/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/png/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include\bullet;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include\bullet;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/Debug/AABOMB.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Debug/AABOMB.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/Box2D/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/chipmunk/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/bullet/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/uv/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/webp/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/websockets/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/curl/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/png/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include\bullet;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include\bullet;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/Release/AABOMB.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/Release/AABOMB.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/Box2D/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/chipmunk/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/bullet/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/uv/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/webp/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/websockets/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/curl/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/png/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include\bullet;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include\bullet;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/MinSizeRel/AABOMB.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/MinSizeRel/AABOMB.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/Box2D/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/chipmunk/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/freetype2/include/win32/freetype2" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/bullet/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/bullet/include/bullet" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/jpeg/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/uv/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/webp/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/websockets/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/curl/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/png/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/icon/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/glfw3/include/win32" /external:I "C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include\bullet;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\audio\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\extensions;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\editor-support;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\base;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\platform\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\recast\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\tinyxml2\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxhash\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\xxtea\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\clipper\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\edtaa3func\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\ConvertUTF\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\poly2tri\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\md5\..;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\unzip\.;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\include\win32\freetype2;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\include\bullet;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\include\OGLES;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\include;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\include\win32;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\proyecto juego\bin\cmake.exe" -E copy_if_different C:/Users/alanb/OneDrive/Escritorio/AABOMB/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\webp\prebuilt\win32\libwebp.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\websockets\prebuilt\win32\websockets.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\prebuilt\win32\libssl.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\curl\prebuilt\win32\libcurl.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\png\prebuilt\win32\libpng.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/RelWithDebInfo/AABOMB.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/bin/AABOMB/RelWithDebInfo/AABOMB.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/alanb/OneDrive/Escritorio/AABOMB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\proyecto juego\bin\cmake.exe" -SC:/Users/alanb/OneDrive/Escritorio/AABOMB -BC:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32 --check-stamp-file C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeCCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeCXXCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeRCCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseArguments.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/alanb/OneDrive/Escritorio/AABOMB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\proyecto juego\bin\cmake.exe" -SC:/Users/alanb/OneDrive/Escritorio/AABOMB -BC:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32 --check-stamp-file C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeCCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeCXXCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeRCCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseArguments.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/alanb/OneDrive/Escritorio/AABOMB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\proyecto juego\bin\cmake.exe" -SC:/Users/alanb/OneDrive/Escritorio/AABOMB -BC:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32 --check-stamp-file C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeCCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeCXXCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeRCCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseArguments.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/alanb/OneDrive/Escritorio/AABOMB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\proyecto juego\bin\cmake.exe" -SC:/Users/alanb/OneDrive/Escritorio/AABOMB -BC:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32 --check-stamp-file C:/Users/alanb/OneDrive/Escritorio/AABOMB/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeCCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeCXXCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeRCCompiler.cmake;C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\3.31.0-rc1\CMakeSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCCompilerABI.c;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXCompilerABI.cpp;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeCompilerIdDetection.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCXXCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerABI.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerId.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineCompilerSupport.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineRCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeDetermineSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeFindBinUtils.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseArguments.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseImplicitLinkInfo.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeParseLibraryArchitecture.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeRCCompiler.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystem.cmake.in;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCXXCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestCompilerCommon.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CMakeTestRCCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TI-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TIClang-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\proyecto juego\share\cmake-3.31\Modules\CompilerId\VS-10.vcxproj.in;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeDetermineLinkerId.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Internal\FeatureTesting.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-Determine-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\proyecto juego\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bomba.cpp" />
+    <ClCompile Include="enemy.cpp" />
+    <ClCompile Include="Jugador.cpp" />
+    <ClInclude Include="bomba.h" />
+    <ClInclude Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes\AppDelegate.h" />
+    <ClInclude Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes\HelloWorldScene.h" />
+    <ClInclude Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\main.h" />
+    <ClInclude Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\resource.h" />
+    <ClCompile Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes\AppDelegate.cpp" />
+    <ClCompile Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\main.cpp" />
+    <ClInclude Include="enemy.h" />
+    <ClInclude Include="Jugador.h" />
+    <ResourceCompile Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\game.rc" />
+    <ClInclude Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\Resources\CloseNormal.png" />
+    <ClInclude Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\Resources\CloseSelected.png" />
+    <ClInclude Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\Resources\HelloWorld.png" />
+    <ClInclude Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\Resources\fonts\arial.ttf" />
+    <ClInclude Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\Resources\res\.gitkeep" />
+    <ClCompile Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_down_1.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_down_2.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_down_3.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_left_1.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_left_2.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_left_3.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_right_1.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_right_2.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_right_3.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_up_1.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_up_2.png" />
+    <Image Include="..\..\..\..\Desktop\sprites\player_walk_up_3.png" />
+    <Image Include="..\Resources\bomb_1.png" />
+    <Image Include="..\Resources\bomb_2.png" />
+    <Image Include="..\Resources\bomb_3.png" />
+    <Image Include="..\Resources\box.png" />
+    <Image Include="..\Resources\enemy_down.png" />
+    <Image Include="..\Resources\enemy_left.png" />
+    <Image Include="..\Resources\enemy_right.png" />
+    <Image Include="..\Resources\enemy_up.png" />
+    <Image Include="..\Resources\explotion_1.png" />
+    <Image Include="..\Resources\explotion_2.png" />
+    <Image Include="..\Resources\explotion_3.png" />
+    <Image Include="..\Resources\explotion_4.png" />
+    <Image Include="..\Resources\ground.jpeg" />
+    <Image Include="..\Resources\player.png" />
+    <Image Include="..\Resources\Wall.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{A86E2006-7868-3F1A-BFE1-E515408503DD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\SYNC_RESOURCE-AABOMB.vcxproj">
+      <Project>{B2276955-876A-3550-8CA6-08D83F674FB9}</Project>
+      <Name>SYNC_RESOURCE-AABOMB</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{13458D2E-B4E4-3FA0-B958-BD59F447E728}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{3C0D68C1-9112-3017-963A-852075D83532}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{7000E88C-37D9-3170-908F-4232BBCFBA61}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{EB3B5C4A-9C29-3B64-85BC-1372C394BBA9}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{42E7AB0D-2FC8-3299-98E9-CBA1309A1AC9}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{3E94ED0E-7347-3D71-938A-DCB8F6AB61EE}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{1DAD7FAA-5948-3ACF-BCD6-7FEE40DD9AC6}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{7D99F0CF-3ABD-38B4-98DA-C0FBE9DEDE90}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{5A0A084F-E9ED-3854-8FA6-A66A771E7D4C}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{DDEDED9C-DD3C-3D68-82A7-E141C28CF9CC}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{BF16DA7A-D452-3482-88BB-4094060E8AD7}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\alanb\OneDrive\Escritorio\AABOMB\proj.win32\engine\external\external.vcxproj">
+      <Project>{3C29680F-3E85-3EF2-8AF7-BD1A0ECA36C7}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
